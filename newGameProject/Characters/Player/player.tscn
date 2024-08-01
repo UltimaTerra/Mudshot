@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://b18wy7wc55xs7"]
+
+[ext_resource type="Script" path="res://Characters/Player/player.gd" id="1_k0ym6"]
+[ext_resource type="Texture2D" uid="uid://btiy8kshhgqax" path="res://res/Lunar Lander Upload/Ships/blue ship.png" id="1_plioi"]
+
+[node name="Player" type="CharacterBody2D"]
+rotation = -1.5708
+script = ExtResource("1_k0ym6")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_plioi")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(12, 3, 12, -4, 10, -9, 4, -12, 4, -12, 0, -13, -5, -13, -12, -7, -12, -5, -9, -5, -9, -4, -10, -3, -10, 2, -9, 3, -9, 5, -11, 4, -12, 4, -12, 7, -7, 11, -1, 12, 6, 11, 12, 4)
